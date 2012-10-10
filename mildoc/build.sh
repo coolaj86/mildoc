@@ -55,7 +55,7 @@ mkdir -p "${SRC_DIR}/static"
 cd "${SRC_DIR}/"
   pakmanager build >/dev/null 2>/dev/null
   uglifyjs pakmanaged.js > pakmanaged.min.js
-  rm "pakmanaged.html"
+  rm -f "pakmanaged.html"
   mv pakmanaged.* "../${BLD_DIR}/"
 cd - > /dev/null
 
